@@ -1,0 +1,33 @@
+<!-- 
+ File: app.component.html
+ Author: Nyiri István
+ Copyright: 2022, Nyiri István
+ Group: Szoft_II_N
+ Date: 2022-11-29
+ Github: https://github.com/nyiriistvan
+ Licenc: GNU GPL
+ -->
+ <div class="container">
+  <h1>Feladat 0354</h1>
+  <h2>Füvesítés</h2>
+  <div class="teltegform">
+    <div class="mb-3">
+      <label for="" class="form-label">A oldal</label>
+      <input type="text" class="form-control"
+      [(ngModel)]="aSide">
+    </div>
+    <br>
+    <div class="mb-3">
+      <label for="" class="form-label">B oldal</label>
+      <input type="text" class="form-control"
+      [(ngModel)]="bSide">
+    </div>
+    <button class="btn btn-success"
+    (click)="calcArea()">Számít</button>
+    <div class="mb-3">
+      <label for="result">Ennyi a telek területe</label>
+      <input type="text" class="form-control"
+      [(ngModel)]="doubleArea">
+    </div>
+  </div>
+ </div>
